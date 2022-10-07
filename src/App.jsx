@@ -22,8 +22,8 @@ function App() {
     ]);
   }
 
-  function deleteTask(){
-    console.log({tasks})
+  function deleteTask(taskId){
+    setTasks(tasks.filter(task => task.id !== taskId))
   }
   
   return (
